@@ -1,0 +1,16 @@
+1. Phân biệt Class và Object
+
+2. Tại sao các thuộc tính bên trong Class lại cho là Private, sau đó dùng Getter, Setter để truy cập, gán giá trị mà không cho nó là public để truy cập trực tiếp
+- Cho private để đảm bảo tính chất đóng gói (mục đích của OOP là chia hệ thống thành các đối tượng/class để quản lý => khác với FOP)
+- Dù cho private, nhưng trong dự án các Class cần trao đổi với nhau, cập nhật thông tin 
+Nếu để thuộc tính public thì người ngoài sẽ biết tất cả các thuộc tính trong class => ko bảo mật thông tin
+=> Sinh ra Getter, Setter
+====> Cho ví dụ thực tế
+
+3. Khái niệm static 
+
+4. Phân biệt Constructor và setter method
+
+5. Khái niệm this 
+
+6. Explain garbage collection in Java 
