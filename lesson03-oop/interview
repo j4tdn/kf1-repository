@@ -1,0 +1,14 @@
+1. Phân biệt class và object
+
+2. Tại sao các thuộc tính bên trong class
+mình cho là private, sau đó dùng getter setter để truy cập, gán
+giá trị mà không cho nó là public để truy cập trực tiếp
+
+3. Khái niệm static
+
+4. Phân biệt constructor và setter method
+
+5. Khái niệm this
+
+6. Explain garbage collection in Java
+==> Adv

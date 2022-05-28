@@ -1,0 +1,44 @@
+1. Đóng gói - Encapsulation
+Khái niệm: Tính chất đóng gói được thể hiện qua các access modifier. Nếu
++ private: phạm vi class
++ protected|default(no define): phạm vi package
+  Khi lớp cha có phương thức, thuộc tính mang access modifier
+  . protected: lớp con (trong | ngoài package) đều có thể thừa kế
+  . default  : lớp con trong cùng package mới có thể thừa kế
++ public: everywhere
+
+2. Đa hình - Polimorphism
+Đa hình trong phương thức
++ Overload:
+  Khái niệm: Hai hay nhiều phương thức được gọi là overload
+  . Cùng tên, thuộc một class
+  . Khác số lượng tham số, kiểu dữ liệu truyền vào của tham số  
++ Overide:
+  Khái niệm: Hai lớp có quan hệ cha con, lớp con muốn định nghĩa lại
+  nội dung trong phương thức đã tồn tại ở lớp cha
+  + Chỉ được phép override phương thức
+  
+Đa hình trong đối tượng
+  Khái niệm: Một biến thuộc một KDL A nhưng lúc runtime có thể
+  trỏ đến nhiều đối tượng có KDL khác nhau(con của A) ở HEAP
+  1. Factory Pattern ==> Che giấu việc khởi tạo của đối tượng
+  2. Dễ dàng convert, chuyển đổi kiểu dữ liệu
+  
+3. Thừa kế
++ Cha: Class, AbstractClass, Interface
++ JAVA07||JAVA0809: AbstractClass vs Interface
++ Khái niệm functional Interface
++ Lambda Expression là gì. Mục đích, cho ví dụ sử dụng
+==> Khi các hàm code giống nhau, chỉ khác nhau điều kiện(chung input, output)
+==> Sử dụng Strategy Design Pattern ==> Lambda expression
+
+Ví dụ: Tìm phần tử thỏa mãn điều kiện a,b,c,x,y,z
+     : Tìm tổng, hiệu, tích, thương của 2 phần tử
+       Operator#execute(int, int): int
+       implement(int a, int b, Operator operator)
+
+4. Trừu tượng
+   Khái niệm: Tính chất trừu tượng được thể qua
+   + Class, Object
+   + Interface, Abstract class, method
+  
