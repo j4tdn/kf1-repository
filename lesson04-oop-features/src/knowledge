@@ -1,0 +1,46 @@
+Encapsulation 
+Khái niệm:tính chất đóng gói thể hiện qua các access modifier
+private : phạm vi class
+protected|default : phạm vi package
+Khi lớp cha co phương thức,thuộc tính mang acces modifier
+protected : lớp con (trong | ngoài package) đều thừa kế dc
+default : lớp con trong cùng package mới có thể thừa kế
+public : every where
+
+Polimorphism 
+
+Đa hình trong phương thức
+Overload :
+Khái niệm : Hai hay nhiều phương thức được gọi là overload
+Cùng tên, thuộc 1 class
+khác số lượng tham số,kiểu dữ liệu truyền vào của tham số
+Overide
+Khái niệm: Hai lớp có quan hệ cha con,lớp con muốn định nghĩa lại nội dung trong phương thức 
+đã tồn tại ở lớp cha
+Chỉ được phép overide phương thức
+
+Đa hình trong đối tượng
+Khái niệm : 1 biến thuộc 1 KDL nhưng lúc runtime có thể trỏ đến nhiều đối tượng có KDL khác nhau
+
+Factory pattern ==> Che giấu việc khởi tạo
+
+
+3.Thừa kế: 
++Cha : Class, AbstractClass ,Interface
++JAVA07 || JAVA09 : AbtractClass và InterFace
++ Khái niệm functional Interface
++Lambda Expression là gì,mục đích cho ví dụ
+==> Khi các hàm code giống nhau chỉ khác điều kiện
+==> sử dụng stratey desion pattern ==> Lambda expression
+
+Vd : Tìm phẩn từ thỏa mãn đk a,b,c,x,y,z
+	: Operator#excute(int, int) : int
+		implement(int a,int b,Operator operator)
+		
+4.Trừu tượng
+	Khái niệm : Tính chất trừu tượng được thể hiện qua
+	+Class ,Object
+	+Interface, Abtract Class , method
+	
+
+
