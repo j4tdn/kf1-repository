@@ -1,0 +1,49 @@
+1. Đóng gói - Encapsulation
+Khái niệm: tính chất đóng gói được thể hiện qua các access modifier. Nếu
++ private: phạm vi Class
++ protected | default (no define): phạm vi package
+Khi lớp cha có phương thức, thuộc tính mang access modifier là:
+. protected: lớp con (trong | ngoài package) đều có thể thừa kế 
+. default  : lớp con trong cùng package mới có thể thừa kế 
++ public: everywhere
+
+2. Đa hình - Polymorphism
+Đa hình trong phương thức
++ Overload: Hai hay nhiều phương thức được gọi là Overload
+  . Cùng tên, thuộc một Class
+  . Khác số lượng tham số, kiểu dữ liệu truyền vào của tham số 
++ Override:  
+ Khái niệm: Hai lớp có quan hệ cha con, lớp con muốn định nghĩa lại nội dung trong phương thức đã tồn tại ở lớp cha.
+*** Chỉ được phép Override phương thức
+Đa hình trong đối tượng 
+Khái niệm: Một biến thuộc một kiểu dữ liệu A nhưng lúc runtime có thể trỏ đến nhiều đối tượng có kiểu dữ liệu khác nhau (con của A) ở HEAP
+	// 1. Factory Pattern ==> che giấu việc khởi tạo của đối tượng
+	// 2. Dễ dàng convert, chuyển đổi kiểu dữ liệu
+	
+3. Thừa kế - Inheritance
+Khi cùng chung thuộc tính, phương thức > thừa kế 
+ 
++ Cha: Class, Abstract class, Interface 
++ JAVA07 || JAVA0809: phân biệt Abstract class và Interface
++ Khái niệm Functional Interface
++ Lambda Expression là gì. Mục đích, cho ví dụ sử dụng 
+==> Khi các hàm code giống nhau, chỉ khác nhau điều kiện (chung input, output)
+==> Sử dụng Stategy Design Pattern ==> Lambda Expression
+
+VD: Tìm phần tử thỏa mãn điều kiện a,b,c,x,y,z
+  : Tìm tổng, hiệu, tích, thương của 2 phần tử 
+	Operator#excute(int, int) => kiểu trả về là int 
+	Implement(int a, int b, Operator operator)
+	
+JAVA Không hỗ trợ đa thừa kế vì Class ko bắt buộc override các hàm có trong class cha => con sẽ ko biết dùng hàm nào từ cha (trường hợp các cha có chung một phương thức)
+ 
+ 4. Trừu tượng:
+ Khái niệm: tính chất trừu tượng được thể hiện qua
+ + Class, Object
+ + Interface, Abstract class, Abstract method
+ 
+ Học OOP để hiểu?
+ Tạo Class gì > Class  đó chứa đối tượng, phương thức nào 
+ Chỗ nào có static, chỗ nào không 
+ Phân tích xem nên áp dụng tính chất nào? (Đa hình, Thừa kế,...)
+  
