@@ -1,0 +1,24 @@
+1. Có bao nhiêu loại Exception?
+=> Xảy ra khi mình chạy ứng dụng
+- Compile Exception (Check Exception): Bắt buộc mình phải xử lý tại Compile
+- Runtime Exception (Uncheck Exception): Không bắt buộc phải xử lý tại Compile (nhưng nên xử lý)
+
+2. Mục đích của Finally là gì? Cho ví dụ 
+- Mục đích: cho dù phần code phía trên có bị Exception hay không thì phần block scope có finally always run
+- VD: Khi ghi vào database/file => có bước save and close
++ VD có 10 dòng code cần xử lý, đang xử lý 4/10 thì bị exception
++ Không xử lý được thì bị crash app => ko thể save and close dòng code ko bị lỗi 
++ Nếu có finally thì dù phía trên có bị lỗi hay không thì vẫn có thể save and close
+
+3. Làm sao để biết một Exception là compile, runtime?
+- Click vào xem
+- Con của Runtime => Runtime Exception 
+- Con của IOException => Compile Exception
+
+4. Các cách xử lý lỗi?
++ Validation
++ Try/Catch 
++ Throw/Throws
+
+5. Exception cha có thể bắt lỗi cho Exception con 
+Trường hợp phía dưới có rất nhiều Exception thì hãy tìm Exception cha của nó để đại diện bắt lỗi 
