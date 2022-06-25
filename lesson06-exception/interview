@@ -1,0 +1,15 @@
+1. Có bao nhiêu loại exception ?
+==> Xảy ra khi mình chạy ứng dụng
+Compile|Check Exception: Bắt buộc mình phải xử lý tại compile
+Runtime|UnCheck Exception: Không bắt buộc phải / Nên xử lý tại compile
+
+2. Mục đích của finally là gì ? Cho ví dụ
+
+3. Các cách để xử lý lỗi
++ Validation
++ Try/Catch
++ Throw/Throws
+
+4. Làm sao để biết một exception là compile, runtime ?
+
+5. Exception cha có thể bắt lỗi cho exception con

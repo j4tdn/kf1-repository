@@ -1,0 +1,36 @@
+Exception: Class trong JAVA sẽ được JVM tự động 'ném', 'quăng' ra
+khi chương trình xảy ra ngoại lệ 
+
+Ví dụ: phép toán chia không
+       truy cần phần tử index > length trong mảng
+       
+Khi mình bị exception --> chương trình sẽ bị crash, dừng ngay lập tức
+
+Có 2 loại exception
+1. Check/Compile Exception:
+   + Những Exception class kế thừa từ class Exception/IOException
+   + Bắt buộc phải xử lý tại compile
+
+2. UnCheck/Runtime Exception:
+   + Những Exception class kế thừa từ class RuntimeException
+   + Không bắt buộc phải xử lý tại compile --> Nên(100%)
+   
+Exception cha có thể bắt và xử lý lỗi cho Exception con
+
+--> Khắc phục: Xử lý ngoại lệ để chương trình có thể tiếp tục chạy khi
+gặp ngoại lệ --> in ra thông tin lỗi
+
+Có 2 cách để xử lý lỗi
+1. Tiền xử lý
+   + Thực hiện validation để đảm bảo input không bị lỗi
+   --> Validate(code manually)
+   
+2. Hậu xử lý
+   + Input có thể bị lỗi
+   + Khi bị exception thì mình sẽ in ra lỗi và tiếp tục chương trình 
+   --> 2.1 --> Using try/catch/finally block để bắt lỗi trực tiếp
+   --> 2.2 --> Using throw/throws để ném lỗi ra chỗ khác xử lý
+       Vì sao phải ném: Có thể input đúng hoặc sai. Nếu mình dùng try catch
+       thì sẽ thừa cho TH dữ liệu đúng. Nên mình cứ throw/throws ra. Chỗ nào
+       chưa validate dữ liệu thì phải bắt lỗi, chỗ nào đã validate dữ liệu
+       thì không cần bắt lỗi này
