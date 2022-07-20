@@ -1,0 +1,6 @@
+1. How many types of String in java?
+	_Mutable
+	_Immutable
+		+ String literal: stored in constant pool. (No duplicate value)
+		+ String object: stored in normal heap. (Always create new object)
+		+ Immutable: cannot change the original heap value of String

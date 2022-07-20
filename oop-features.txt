@@ -1,0 +1,17 @@
+1 Đóng gói- Encapsulation
+Thể hiện qua các access modifier.
++Private:phạm vi class
++Protected/default:phạm vi package
++Public: everywhere
+2 Đa hình - polymorphism
+_Đa hình trong phương thức
+ 	+ Overload:Hai hay nhiều phương thức đc gọi là overload khi:
+		. Cùng tên,cùng class
+		. khác số lượng tham số hoặc khác kiểu dữ liệu truyền vào
+	+Override:Định nghĩa lại phương thức của lớp cha trong lớp con,không thể
+		     định nghĩa lại field.
+_Đa hình trong đối tượng: Một biến thuộc một KDL nhưng lúc runtime có thể
+trỏ đến nhưng đối tượng có KDL khác nhau ở HEAP.
+3.Inheritance Thừa kế
++ Cha:class, AbstractClass,Interface
++ 
