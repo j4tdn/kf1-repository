@@ -1,0 +1,6 @@
+1.How many string type in JAVA???
+Mutable 
+Immutable String
++ String literal:Constant pool (no duplicate value)
++ String object : Normal heap (Always create new object)
++ Immutable: Cannot change the original heap value of String
