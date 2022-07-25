@@ -2,7 +2,7 @@ package view;
 
 public class Ex06 {
 	public static void main(String[] args) {
-		System.out.println(numberAt(9));
+		System.out.println(numberAt(69));
 	}
 	private static String numberAt(int n) {
 		StringBuilder sb = new StringBuilder();
