@@ -11,10 +11,12 @@ public class Ex03 {
 		String sequence = sc.nextLine();
 		System.out.println("Output: ");
 		System.out.println(show(sequence));
+		String str = "Ô ồ ố ớ";
+		System.out.println(str.replaceAll("[ồốớ]", "o"));
 	}
 	private static String show(String s) {
 		String temp = Normalizer.normalize(s, Normalizer.Form.NFD);
 		Pattern pattern = Pattern.compile("\\p{InCombiningDiacriticalMarks}+");
-		return pattern.matcher(temp).replaceAll("");
+		return pattern.matcher(temp).replaceAll("").replace("đ", "d").replace("Đ", "D");
 	}
 }

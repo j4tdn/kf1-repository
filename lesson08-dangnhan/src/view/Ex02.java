@@ -30,7 +30,8 @@ public class Ex02 {
 		String[] words = name.split("\\s");
 		StringBuilder sb = new StringBuilder();
 		for(String word : words) {
-			sb.append(Character.toUpperCase(word.charAt(0))).append(word.substring(1).toLowerCase()).append(" ");
+			String formatWord = Character.toUpperCase(word.charAt(0)) + (word.substring(1).toLowerCase());
+			sb.append(formatWord).append(' ');
 		}
 		return sb.toString().trim();
 	}

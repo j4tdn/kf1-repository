@@ -1,14 +1,13 @@
 package view;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Ex04 {
 	public static void main(String[] args) {
-		int[] d1 = findDivisor(15);
-		ArrayList<Integer> p1 = prime(d1);
+		List<Integer> p1 = findDivisors(75);
 		
-		int[] d2 = findDivisor(75);
-		ArrayList<Integer> p2 = prime(d2);
+		List<Integer> p2 = findDivisors(95);
 		
 		if(p1.equals(p2)) {
 			System.out.println("True");
@@ -18,16 +17,14 @@ public class Ex04 {
 		}
 		
 	}
-	public static int[] findDivisor(int m) {
-		int[] divisor = new int[m];
-		int count = 0;
-		for(int i = 1; i <= m; i++) {
-			if(m % i == 0) {
-				divisor[count] = i;
-				count++;
+	public static List<Integer> findDivisors(int m) {
+		List<Integer> divisors = new ArrayList<>();
+		for(int i = 2; i <= m; i++) {
+			if(m % i == 0 && isPrime(i)) {
+				divisors.add(i);
 			}
 		}
-		return divisor;
+		return divisors;
 	}
 	
 	public static boolean isPrime(int n) {
@@ -44,15 +41,4 @@ public class Ex04 {
         return true;
     }
 	
-	public static ArrayList<Integer> prime(int[] d) {
-		ArrayList<Integer> listPrimeDivisor = new ArrayList<Integer>();
-		
-		for(int i = 0; i < d.length; i++) {
-			if(isPrime(d[i])) {
-				listPrimeDivisor.add(d[i]);
-			}
-		}
-		
-		return listPrimeDivisor;
-	}
 }
