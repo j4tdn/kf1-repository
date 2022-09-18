@@ -1,0 +1,13 @@
+Collection
+--> Support object type only
+- List<T>
+----> override T's equals method when using contains, remove
+
+	+ ArrayList
+		. Array with fixed size
+		.  size <= length
+		. capacity
+	+ LinkedList
+		. 
+	+ LinkedList(1) vs ArrayList(2)
+		. add/remove : 2

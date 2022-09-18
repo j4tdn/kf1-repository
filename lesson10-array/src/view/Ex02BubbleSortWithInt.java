@@ -2,17 +2,17 @@ package view;
 
 import java.util.Arrays;
 
-import utils.CompareHelper;
+import utils.CompareIntHelper;
 import utils.SortUtils;
 
-public class Ex02BubbleSort {
+public class Ex02BubbleSortWithInt {
 	public static void main(String[] args) {
 		int[] numbers = {1, 5, 11, 9, 4, 6};
 		
 		bubbleSort(numbers,(pre,next) -> pre > next);
 		System.out.println(Arrays.toString(numbers));
 	}
-	private static void bubbleSort(int[] source,CompareHelper helper) {
+	private static void bubbleSort(int[] source,CompareIntHelper helper) {
 		int len = source.length;
 		for (int i = 0; i < len; i++) {
 			for (int j = 0; j < len - i - 1; j++) {
